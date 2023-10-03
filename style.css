@@ -18,6 +18,9 @@
     background: #292C35;
     color: aliceblue;
 }
+.content{
+    height: 100vh;
+}
 /*Header*/
 header{
     height: 70px;

@@ -11,14 +11,14 @@ const sections = document.querySelectorAll('section');
 //func to scroll to view
 const clickScroll = (sec) => {sec.scrollIntoView({behaviour : 'smooth'});}
 //callbacks
-    homeBtn.addEventListener('click',() => {clickScroll(sections[0]);});
-    aboutBtn.addEventListener('click', () => {clickScroll(sections[1]);});
-    projectBtn.addEventListener('click',() => {clickScroll(sections[2]);});
-    contactBtn.addEventListener('click',() => {clickScroll(sections[3]);});
+    
+    aboutBtn.addEventListener('click', () => {clickScroll(sections[0]);});
+    projectBtn.addEventListener('click',() => {clickScroll(sections[1]);});
+    contactBtn.addEventListener('click',() => {clickScroll(sections[2]);});
 }
 clicktoScroll();
 
-//function to dark mode and
+//function to dark mode
 
 const toggleDisplay = () => {
     const toggleBtn = document.getElementById('toggle');
@@ -27,7 +27,7 @@ const toggleDisplay = () => {
     toggleBtn.addEventListener('click', () => {
         body.classList.toggle('dark-mode');
         i.classList.toggle('bi-sun');
-        
+        //need to fix thiz
     })
   
 
