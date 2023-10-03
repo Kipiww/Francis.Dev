@@ -40,6 +40,9 @@ header{
 .logo span{
     color: #a188ea;
 }
+span.span-dark{
+    color: #00FFFF;
+}
 nav{
     display: flex;
     align-items: center;    
@@ -54,6 +57,10 @@ nav a:hover{
     background: #a188ea;
     color: #fff;
     transition: .2s ease;  
+}
+a.hover-color:hover{
+    background: #00FFFF;
+    color: #17181d;
 }
 
 /*nav-bar*/
