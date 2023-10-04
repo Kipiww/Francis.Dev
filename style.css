@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100&display=swap');
+
 ::root{
         --blue--: #2d3250;
         --grayBlue--: #424769;
@@ -13,10 +15,13 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
-
+body{
+    transition: .2s ease;
+}
 .dark-mode{
     background: #292C35;
     color: aliceblue;
+    transition: .2s ease;
 }
 .content{
     height: 100vh;
@@ -37,8 +42,8 @@ header{
     font-size: 25px;
     font-weight: bold;
 }
-.logo span{
-    color: #a188ea;
+ span{
+    color: #F67922;
 }
 span.span-dark{
     color: #00FFFF;
@@ -54,7 +59,7 @@ nav a{
     border-radius: 10px;
 }
 nav a:hover{
-    background: #a188ea;
+    background:  #F67922;
     color: #fff;
     transition: .2s ease;  
 }
@@ -69,5 +74,33 @@ section{
     height: 100vh;
     
 }
+/*Name*/
+.intro{
+    height: fit-content;
+    width: 90%;
+    padding: 30px;
+    position: relative;
+    top: 20%;
+}
+.content .intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.name{
+    margin-right: auto;
+}
+/*name*/
+.name h1{
+    font-size: 45px;
+}
+#helloWorld{
+    font-size: 20px;
+    
+}
+/*Image*/
+.image img{
+    height: 250px;
+}
 
