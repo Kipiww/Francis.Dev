@@ -26,6 +26,12 @@ body{
 .content{
     height: 100vh;
 }
+h1,p,span{
+    cursor: default;
+}
+iframe{
+    cursor: default;
+}
 /*Header*/
 header{
     height: 70px;
@@ -63,6 +69,9 @@ nav a:hover{
     color: #fff;
     transition: .2s ease;  
 }
+a.hover-color{
+    color: aliceblue;
+}
 a.hover-color:hover{
     background: #00FFFF;
     color: #17181d;
@@ -72,9 +81,9 @@ a.hover-color:hover{
 
 section{
     height: 100vh;
-    
+    width: auto;
 }
-/*Name*/
+/*container*/
 .intro{
     height: fit-content;
     width: 90%;
@@ -82,18 +91,31 @@ section{
     position: relative;
     top: 20%;
 }
-.content .intro{
+ .content .intro{
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
+ }
+    
 
+/*Name*/
 .name{
     margin-right: auto;
 }
-/*name*/
 .name h1{
     font-size: 45px;
+}
+.name a{
+    color: aliceblue;
+    padding: .5em;
+    border-radius: 10px;
+    background: #F67922;
+    font-size: 15px;
+}
+.hire a{
+    margin-right: .6em;
+}
+a.cv{
+    background: #00FFFF;
+    color: #17181d;
 }
 #helloWorld{
     font-size: 20px;
@@ -101,6 +123,32 @@ section{
 }
 /*Image*/
 .image img{
-    height: 250px;
+    height: 350px;
 }
 
+/*About me*/
+.About{padding: 30px;}
+.About div{margin-right: auto;}
+.About-container{display: flex;position: relative;top: 10%;padding: 2em;}
+.About-container div{margin-right:20px;}
+.skills{margin-top: 40px;}
+.lang{display: flex;margin-top: 20px;}
+.lang img{height: 60px;margin: 0px 20px;}
+
+/*Projects*/
+.project-container{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+}
+.project-container div{
+   border: #fff solid 1px;
+   height: 200px;
+   width: auto;
+   padding: 2em;
+   margin: 20px;
+}
+.project-container img{
+    height: 100px;
+}
