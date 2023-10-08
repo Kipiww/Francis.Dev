@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:wght@100&display=swap');
-
+/*Global Scopes*/
 ::root{
         --blue--: #2d3250;
         --grayBlue--: #424769;
         --matteBlack--: #17181d;
         --gray--: #292C35;
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -15,29 +14,27 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
-body{
-    transition: .2s ease;
-}
-.dark-mode{
-    background: #292C35;
-    color: aliceblue;
-    transition: .2s ease;
-}
-.content{
-    height: 100vh;
-}
-h1,p,span{
-    cursor: default;
-}
-iframe{
-    cursor: default;
-}
+
+body{transition: .2s ease;}
+.dark-mode{background: #292C35;color: aliceblue;transition: .2s ease;}
+
+h1,p,span{cursor: default;}
+p{text-wrap: balance;}
+section{height: 100vh;width: auto;}
+/*Scrollbar*/
+::-webkit-scrollbar{width: 10px;height: 120px;}
+::-webkit-scrollbar-thumb{background-color: #F67922;border-radius: 10px; width: 8px;height: 20px;}
+.dark-mode::-webkit-scrollbar-thumb{background-color: #00FFFF;}
+
+/*Inro*/
+.content{height: 100vh;}
 /*Header*/
 header{
     height: 70px;
+    width: auto;
     display: flex;
-     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-     padding: 10px 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px 15px;
 }
 .logo{
     display: flex;
@@ -77,12 +74,7 @@ a.hover-color:hover{
     color: #17181d;
 }
 
-/*nav-bar*/
 
-section{
-    height: 100vh;
-    width: auto;
-}
 /*container*/
 .intro{
     height: fit-content;
@@ -142,13 +134,14 @@ a.cv{
     gap: 2em;
     margin-left: 50px;
     margin-top: 50px;
+   
 }
 .project-container div{
    border: #000 solid 1px;
    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
    border-radius: 10px;
    height: 150px;
-   width: 220px;
+   width: fit-content;
    padding: 2em;
    margin: 20px;
 }
@@ -162,14 +155,7 @@ a.cv{
     width: 90%;
 }
 /*project Links*/
-.link{
-    padding: .2em;
-    color: #000;
-    border-radius: 10px;
-    
-}
-.link:hover{
-    background: #F67922;
-    color: #fff;
-    transition: .2s ease;
-}
+.link{padding: .4em;color: #000;border-radius: 10px;}
+.link:hover{background: #F67922;color: #fff;transition: .2s ease;}
+.project-container div h3{margin-bottom: 5px;}
+.project-container div p{font-size: 13px;width: 100%;}
