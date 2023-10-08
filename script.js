@@ -42,14 +42,18 @@ const toggleDisplay = () => {
         body.classList.toggle('dark-mode');
         span.forEach((spans) => {spans.classList.toggle('span-dark');})
        //navs
-        const navLinks = Array.from(a).slice(0,5);
+        const navLinks = Array.from(a).slice(0,4);
         navLinks.forEach((element) => {element.classList.toggle('hover-color')})
         //download cv
         a[5].classList.toggle('cv');
         a[6].classList.toggle('cv');
 
-        //dark mode about me
+        //dark mode about me\
 
+
+        //links in projects
+        const projectLink = Array.from(a).slice(4,10);
+        projectLink.forEach((element) => {element.classList.toggle('hover-color')})
     });
 }
 toggleDisplay();
