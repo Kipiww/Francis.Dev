@@ -22,7 +22,7 @@ h1,p,span{cursor: default;}
 p{text-wrap: balance;}
 section{height: 100vh;width: auto;}
 /*Scrollbar*/
-::-webkit-scrollbar{width: 10px;height: 120px;}
+::-webkit-scrollbar{width: 10px;height: 10px;}
 ::-webkit-scrollbar-thumb{background-color: #F67922;border-radius: 10px; width: 8px;height: 20px;}
 .dark-mode::-webkit-scrollbar-thumb{background-color: #00FFFF;}
 
