@@ -23,8 +23,8 @@ const toggleDisplay = () => {
     const icon = document.querySelector('i');
     const span = document.querySelectorAll('span');
     const a = document.querySelectorAll('a');
-    const p = document.querySelectorAll('p');
     const img = document.querySelectorAll('img');
+    const footer = document.querySelector('footer');
 
     //toggle DarkMode
     toggleBtn.addEventListener('click', () => {
