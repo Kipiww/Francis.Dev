@@ -66,6 +66,10 @@ const submitForm = () => {
     const clientEmail = inputs[1];
     const clientMessage = document.querySelector('textarea');
     const submitBtn = document.getElementById('submit');
+    const form = document.querySelector('form');
+
+
+    //
 
 }
 submitForm();

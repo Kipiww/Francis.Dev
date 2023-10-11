@@ -272,18 +272,17 @@ div.contact-darkmode button{
 footer{
     height: 70px;
     width: 100%;
-    position: relative;
-    top: 10%;
-   
+   margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 footer img{
    height: 19px;
+   
 }
 footer a{
     color: #000;
-    font-size: 20px;
+    font-size: 19px;
     margin: 0px 10px;
 }
