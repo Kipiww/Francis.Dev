@@ -24,8 +24,7 @@ const toggleDisplay = () => {
     const span = document.querySelectorAll('span');
     const a = document.querySelectorAll('a');
     const img = document.querySelectorAll('img');
-    const footer = document.querySelector('footer');
-
+    const contactDiv = document.querySelector('.contact-container')
     //toggle DarkMode
     toggleBtn.addEventListener('click', () => {
         //dark mode
@@ -47,13 +46,26 @@ const toggleDisplay = () => {
         //download cv
         a[5].classList.toggle('cv');
         a[6].classList.toggle('cv');
-
-        //dark mode about me
        
         //links in projects
         const projectLink = Array.from(a).slice(7,13);
         projectLink.forEach((element) => element.classList.toggle('hover-color'))
-        
+
+        //contacts 
+        contactDiv.classList.toggle('contact-darkmode');
+
     });
 }
 toggleDisplay();
+
+//function to submitForm
+const submitForm = () => {
+    //get the documents
+    const  inputs = document.querySelectorAll('input')
+    const clientName = inputs[0];
+    const clientEmail = inputs[1];
+    const clientMessage = document.querySelector('textarea');
+    const submitBtn = document.getElementById('submit');
+
+}
+submitForm();
