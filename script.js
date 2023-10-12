@@ -58,22 +58,3 @@ const toggleDisplay = () => {
 }
 toggleDisplay();
 
-//function to submitForm
-const submitForm = () => {
-    //get the documents
-    const  inputs = document.querySelectorAll('input')
-    const clientName = inputs[0];
-    const clientEmail = inputs[1];
-    const clientMessage = document.querySelector('textarea');
-    const submitBtn = document.getElementById('submit');
-    const form = document.querySelector('form');
-
-    submitBtn.addEventListener('click',() => {
-        
-
-    })
-
-    //
-
-}
-submitForm();

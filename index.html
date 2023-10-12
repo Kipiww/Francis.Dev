@@ -126,20 +126,26 @@
                 </div>   
             </div>
             <div class="message">
-                <form action="https://formsubmit.co/gilabarintos@gmail.com" enctype="multipart/form-data" method="post">
+                <form action="https://formsubmit.co/2be1d16430d78c48975d6012769b9841" enctype="multipart/form-data" method="post">
+                    <!--honeypot -->
+                    <input type="text" name="_honey" style="display: none;">
+                    <!-- disable capcha -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <!-- change style of submit form -->
+                    <input type="hidden" name="_next" value="https://kipiww.github.io/Francis.Dev/send-suceeded.html">
                    <div class="client-info">
                         <div class="client-name">
                             <label>Name</label>
-                            <input type="text"><br>
+                            <input type="text" name="name" required autocomplete="off"><br>
                         </div>
                         <div class="client-email">
                             <label>Email</label>
-                            <input type="text"><br>
+                            <input type="text" name="Email&nbsp;Adress" required autocomplete="off"><br>
                         </div>
                    </div>
                     <div class="client-message">
                         <label for="messages">Message</label>
-                       <textarea placeholder="Enter your message here"></textarea>
+                       <textarea placeholder="Enter your message here" name="Message" required autocomplete="off"></textarea>
                     </div>
 
                 <!-- Submit Button -->
