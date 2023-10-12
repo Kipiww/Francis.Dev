@@ -57,4 +57,3 @@ const toggleDisplay = () => {
     });
 }
 toggleDisplay();
-
