@@ -133,7 +133,7 @@ a.cv{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2em;
     margin-left: 20px;
-    margin-top: 50px;
+    margin-top: 10px;
    
 }
 .project-container div{
@@ -261,7 +261,7 @@ form button{
 }
 #submit{
     position: relative;
-    left: 75%;
+    left: 70%;
     top: 13%;
 }
 div.contact-darkmode button{
